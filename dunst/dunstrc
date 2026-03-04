@@ -1,0 +1,18 @@
+[global]
+    origin = bottom-right
+    width = (0, 300)
+    offset = 10x10
+    max_icon_size = 16
+    horizontal_padding = 8  # Set to a reasonable, equal value
+    text_icon_padding = 0    
+    horizontal_padding = 10
+    frame_width = 1
+    frame_color = "#dedede"
+    gap_size = 0
+    font = "JetbrainsMono NF 10"
+    timeout = 5
+    icon_path = "/usr/share/icons/Tela-circle"
+    enable_recursive_icon_lookup = true
+    corner_radius = 0
+    background = "#000000"
+    foreground = "#dedede"
