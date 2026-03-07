@@ -1,5 +1,5 @@
 [global]
-    origin = bottom-right
+    origin = bottom-center
     width = (0, 300)
     offset = 10x10
     max_icon_size = 16
@@ -14,5 +14,5 @@
     icon_path = "/usr/share/icons/Tela-circle"
     enable_recursive_icon_lookup = true
     corner_radius = 0
-    background = "#000000"
+    background = "#293036"
     foreground = "#dedede"

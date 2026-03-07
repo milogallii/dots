@@ -5,7 +5,7 @@ mouse = true
 auto-save = false
 cursorline = true
 cursorcolumn = true
-bufferline = "always"
+bufferline = "never"
 true-color = true
 line-number = "relative"
 scrolloff = 999
@@ -16,7 +16,7 @@ cursor-line = "warning"
 other-lines = "disable"
 
 [editor.soft-wrap]
-enable = false
+enable = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -24,7 +24,7 @@ normal = "block"
 select = "underline"
 
 [editor.statusline]
-left = []
+left = ["file-name"]
 center = []
 right = []
 separator = " - "

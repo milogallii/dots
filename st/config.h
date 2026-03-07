@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 static char *font =
-    "JetbrainsMono Nerd Font:style=Regular:pixelsize=18:antialias=true:autohint=true";
+    "JetbrainsMono Nerd Font:style=Regular:pixelsize=22:antialias=true:autohint=true";
 static int borderpx = 10;
 
 /*
@@ -95,36 +95,37 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    /* 8 normal colors */
-    [0] = "#3d484d", /* black   (bg2) */
-    [1] = "#e67e80", /* red     (red) */
-    [2] = "#a7c080", /* green   (green) */
-    [3] = "#dbbc7f", /* yellow  (yellow) */
-    [4] = "#7fbbb3", /* blue    (blue) */
-    [5] = "#d699b6", /* magenta (purple) */
-    [6] = "#83c092", /* cyan    (aqua) */
-    [7] = "#d3c6aa", /* white   (fg) */
+	/* 8 normal colors */
+	[0] = "#282828", /* hard contrast: #1d2021 / soft: #32302f */
+	[1] = "#cc241d", /* red     */
+	[2] = "#98971a", /* green   */
+	[3] = "#d79921", /* yellow  */
+	[4] = "#458588", /* blue    */
+	[5] = "#b16286", /* magenta */
+	[6] = "#689d6a", /* cyan    */
+	[7] = "#a89984", /* white   */
 
-    /* 8 bright colors */
-    [8]  = "#859289", /* bright black   (grey1) */
-    [9]  = "#e69875", /* bright red     (orange) - mapped to orange for variety */
-    [10] = "#a7c080", /* bright green   (green) */
-    [11] = "#dbbc7f", /* bright yellow  (yellow) */
-    [12] = "#7fbbb3", /* bright blue    (blue) */
-    [13] = "#d699b6", /* bright magenta (purple) */
-    [14] = "#83c092", /* bright cyan    (aqua) */
-    [15] = "#d3c6aa", /* bright white   (fg) */
+	/* 8 bright colors */
+	[8]  = "#928374", /* black   */
+	[9]  = "#fb4934", /* red     */
+	[10] = "#b8bb26", /* green   */
+	[11] = "#fabd2f", /* yellow  */
+	[12] = "#83a598", /* blue    */
+	[13] = "#d3869b", /* magenta */
+	[14] = "#8ec07c", /* cyan    */
+	[15] = "#ebdbb2", /* white   */
 
-    [255] = 0,
-
-    [256] = "#293036", /* background (bg0) */
-    [257] = "#d3c6aa", /* foreground (fg) */
-    [258] = "#d3c6aa", /* cursor     (fg) */
-    [259] = "#2d353b", /* rev cursor (bg0) */
+	/* special colors */
+	[255] = 0,
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#add8e6", /* 256 */
+	"#555555", /* 257 */
+	"#ebdbb2", /* 258: foreground */
+	"#282828", /* 259: background */
 };
 
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
+unsigned int defaultfg = 258;
+unsigned int defaultbg = 259;
 unsigned int defaultcs = 258;
 static unsigned int defaultrcs = 259;
 

@@ -1,4 +1,2 @@
-# inherits = "jetbrains_dark"
-# inherits = "everforest_dark"
 inherits = "gruvbox"
 "ui.background" = {}
