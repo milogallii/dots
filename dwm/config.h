@@ -5,8 +5,8 @@ static const int showbar = 0;           /* 0 means no bar */
 static const int topbar = 1;            /* 0 means bottom bar */
 static const int user_bh = 0; /* 0 means that dwm will calculate bar height, >=
                                  1 means dwm will user_bh as bar height */
-static const char *fonts[] = {"JetbrainsMono NF:size=10"};
-static const char dmenufont[] = "JetbrainsMono NF:size=10";
+static const char *fonts[] = {"JetbrainsMono NF:size=14"};
+static const char dmenufont[] = "JetbrainsMono NF:size=14";
 // static const char col_gray1[] = "#1a1b26";
 static const char col_gray1[] = "#282828";
 static const char col_gray2[] = "#444444";
