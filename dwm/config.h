@@ -1,18 +1,17 @@
-static const unsigned int borderpx = 1; /* border pixel of windows */
+static const unsigned int borderpx = 2; /* border pixel of windows */
 static const unsigned int snap = 10;     /* snap pixel */
 static const unsigned int gappx = 10;   /* gaps between windows */
-static const int showbar = 0;           /* 0 means no bar */
+static const int showbar = 1;           /* 0 means no bar */
 static const int topbar = 1;            /* 0 means bottom bar */
 static const int user_bh = 0; /* 0 means that dwm will calculate bar height, >=
                                  1 means dwm will user_bh as bar height */
-static const char *fonts[] = {"JetbrainsMono NF:size=14"};
-static const char dmenufont[] = "JetbrainsMono NF:size=14";
-// static const char col_gray1[] = "#282828";
-static const char col_gray1[] = "#282828";
+static const char *fonts[] = {"Iosevka Nerd Font:size=16"};
+static const char dmenufont[] = "Iosevka Nerd Font:size=16";
+static const char col_gray1[] = "#1C2321";
 static const char col_gray2[] = "#444444";
 static const char col_gray3[] = "#bbbbbb";
 static const char col_gray4[] = "#eeeeee";
-static const char col_cyan[] = "#ffdc8a";
+static const char col_cyan[] = "#fc8eac";
 static const char *colors[][3] = {
     /*               fg         bg         border   */
     [SchemeNorm] = {col_gray3, col_gray1, col_gray2},

@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 static char *font =
-    "JetbrainsMono Nerd Font:style=Regular:pixelsize=22:antialias=true:autohint=true";
+    "Iosevka Nerd Font:style=Regular:pixelsize=24:antialias=true:autohint=true";
 static int borderpx = 10;
 
 /*
@@ -122,8 +122,8 @@ static const char *colorname[] = {
 	"#555555", /* 257 */
 	"#ebdbb2", /* 258: foreground */
 	// "#282828", /* 259: background */
- "#1e2420",
-};
+	"#1C2321",
+ };
 
 unsigned int defaultfg = 258;
 unsigned int defaultbg = 259;

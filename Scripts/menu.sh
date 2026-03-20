@@ -1,2 +1,2 @@
 #!/bin/bash
-dmenu_run -i -fn "JetbrainsMono NF" -nb "#282828" -sb "#8888ee" -nf "#dddddd"
+dmenu_run -i -fn "Iosevka Nerd Font:regular:pixelsize=26" -nb "#282828" -sb "#fc8eac" -nf "#dddddd"
