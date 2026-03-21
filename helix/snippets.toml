@@ -1,0 +1,5 @@
+# [[snippets]]
+# prefix = "aa"
+# scope = [ "rust" ]  
+# body = 'struct A{ name: String, age : i32}'
+# description = "create struct"
