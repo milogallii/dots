@@ -1,2 +1,2 @@
-inherits = "gruvbox"
+inherits = "tokyonight"
 "ui.background" = {}

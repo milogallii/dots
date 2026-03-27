@@ -7,12 +7,12 @@
     text_icon_padding = 0    
     horizontal_padding = 10
     frame_width = 2
-    frame_color = "#fc8eac"
+    frame_color = "#CCA43B"
     gap_size = 0
     font = "JetbrainsMono NF 14"
     timeout = 5
     icon_path = "/usr/share/icons/Tela-circle"
     enable_recursive_icon_lookup = true
     corner_radius = 0
-    background = "#1C2321"
+    background = "#1a1b2e"
     foreground = "#dedede"
