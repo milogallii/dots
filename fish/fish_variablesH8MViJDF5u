@@ -1,0 +1,6 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR tide_os_color:fabd2f
+SETUVAR tide_pwd_color_anchors:83a598
+SETUVAR tide_pwd_color_dirs:a89984
+SETUVAR tide_pwd_color_truncated_dirs:665c54

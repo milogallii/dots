@@ -7,11 +7,11 @@ static const int user_bh = 0; /* 0 means that dwm will calculate bar height, >=
                                  1 means dwm will user_bh as bar height */
 static const char *fonts[] = {"Iosevka Nerd Font:size=14"};
 static const char dmenufont[] = "Iosevka Nerd Font:size=14";
-static const char col_gray1[] = "#1a1b2e";
+static const char col_gray1[] = "#282828";
 static const char col_gray2[] = "#444444";
 static const char col_gray3[] = "#bbbbbb";
 static const char col_gray4[] = "#eeeeee";
-static const char col_cyan[] = "#CCA43B";
+static const char col_cyan[] = "#E0FF4F";
 static const char *colors[][3] = {
     /*               fg         bg         border   */
     [SchemeNorm] = {col_gray3, col_gray1, col_gray2},

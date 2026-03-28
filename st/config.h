@@ -94,79 +94,45 @@ unsigned int tabspaces = 8;
 
 
 /* Terminal colors (16 first used in escape sequence) */
-// GRUVBOX
-// static const char *colorname[] = {
-// 	/* 8 normal colors */
-// 	[0] = "#282828", /* hard contrast: #1d2021 / soft: #32302f */
-// 	[1] = "#cc241d", /* red     */
-// 	[2] = "#98971a", /* green   */
-// 	[3] = "#d79921", /* yellow  */
-// 	[4] = "#458588", /* blue    */
-// 	[5] = "#b16286", /* magenta */
-// 	[6] = "#689d6a", /* cyan    */
-// 	[7] = "#a89984", /* white   */
-
-// 	/* 8 bright colors */
-// 	[8]  = "#928374", /* black   */
-// 	[9]  = "#fb4934", /* red     */
-// 	[10] = "#b8bb26", /* green   */
-// 	[11] = "#fabd2f", /* yellow  */
-// 	[12] = "#83a598", /* blue    */
-// 	[13] = "#d3869b", /* magenta */
-// 	[14] = "#8ec07c", /* cyan    */
-// 	[15] = "#ebdbb2", /* white   */
-
-// 	/* special colors */
-// 	[255] = 0,
-// 	/* more colors can be added after 255 to use with DefaultXX */
-// 	"#add8e6", /* 256 */
-// 	"#555555", /* 257 */
-// 	"#ebdbb2", /* 258: foreground */
-// 	"#262626", /* 259: background */
-	
-//  };
-
-
-
-// unsigned int defaultfg = 258;
-// unsigned int defaultbg = 259;
-// unsigned int defaultcs = 258;
-// static unsigned int defaultrcs = 259;
-
-// TOKYONIGHT
 static const char *colorname[] = {
 	/* 8 normal colors */
-	[0]  = "#15161e",   /* black        — deep void          */
-	[1]  = "#f7768e",   /* red          — sakura             */
-	[2]  = "#9ece6a",   /* green        — moss glow          */
-	[3]  = "#e0af68",   /* yellow       — lantern            */
-	[4]  = "#7aa2f7",   /* blue         — neon indigo        */
-	[5]  = "#bb9af7",   /* magenta      — purple rain        */
-	[6]  = "#7dcfff",   /* cyan         — electric aqua      */
-	[7]  = "#a9b1d6",   /* white        — moonlight          */
- 
-	/* 8 bright colors */
-	[8]  = "#414868",   /* bright black   — distant city     */
-	[9]  = "#f7768e",   /* bright red     — sakura           */
-	[10] = "#9ece6a",   /* bright green   — moss glow        */
-	[11] = "#e0af68",   /* bright yellow  — lantern          */
-	[12] = "#7aa2f7",   /* bright blue    — neon indigo      */
-	[13] = "#bb9af7",   /* bright magenta — purple rain      */
-	[14] = "#7dcfff",   /* bright cyan    — electric aqua    */
-	[15] = "#c0caf5",   /* bright white   — star dust        */
- 
-	/* extra colors — referenced below by index */
-	[256] = "#1a1b2e",  /* background                        */
-	[257] = "#c0caf5",  /* foreground                        */
-	[258] = "#c0caf5",  /* cursor                            */
-};
- 
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-unsigned int defaultcs = 258;  /* cursor color  */
-unsigned int defaultrcs = 257; /* reverse cursor */
+	[0] = "#282828", /* hard contrast: #1d2021 / soft: #32302f */
+	[1] = "#cc241d", /* red     */
+	[2] = "#98971a", /* green   */
+	[3] = "#d79921", /* yellow  */
+	[4] = "#458588", /* blue    */
+	[5] = "#b16286", /* magenta */
+	[6] = "#689d6a", /* cyan    */
+	[7] = "#a89984", /* white   */
 
-  // * 2: Block ("█")
+	/* 8 bright colors */
+	[8]  = "#928374", /* black   */
+	[9]  = "#fb4934", /* red     */
+	[10] = "#b8bb26", /* green   */
+	[11] = "#fabd2f", /* yellow  */
+	[12] = "#83a598", /* blue    */
+	[13] = "#d3869b", /* magenta */
+	[14] = "#8ec07c", /* cyan    */
+	[15] = "#ebdbb2", /* white   */
+
+	/* special colors */
+	[255] = 0,
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#add8e6", /* 256 */
+	"#555555", /* 257 */
+	"#ebdbb2", /* 258: foreground */
+	"#262626", /* 259: background */
+	
+ };
+
+
+
+unsigned int defaultfg = 258;
+unsigned int defaultbg = 259;
+unsigned int defaultcs = 258;
+static unsigned int defaultrcs = 259;
+
+// * 2: Block ("█")
  // * 4: Underline ("_")
  // * 6: Bar ("|")
  // * 7: Snowman ("☃")
