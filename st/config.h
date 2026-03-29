@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 static char *font =
-    "Iosevka Nerd Font:style=Regular:pixelsize=26:antialias=true:autohint=true";
+    "Iosevka Nerd Font:style=Regular:pixelsize=22:antialias=true:autohint=true";
 static int borderpx = 10;
 
 /*
