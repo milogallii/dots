@@ -7,7 +7,7 @@
     text_icon_padding = 0    
     horizontal_padding = 10
     frame_width = 2
-    frame_color = "#E0FF4F"
+    frame_color = "#484848"
     gap_size = 0
     font = "Iosevka Nerd Font 14"
     timeout = 5
