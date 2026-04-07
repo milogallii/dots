@@ -1,2 +1,2 @@
-inherits = "gruvbox"
+inherits = "github_dark_colorblind"
 "ui.background" = {}

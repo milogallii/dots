@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 static char *font =
-    "Iosevka Nerd Font:style=Regular:pixelsize=22:antialias=true:autohint=true";
+    "Iosevka Nerd Font:style=Regular:pixelsize=26:antialias=true:autohint=true";
 static int borderpx = 10;
 
 /*
@@ -94,43 +94,43 @@ unsigned int tabspaces = 8;
 
 
 /* Terminal colors (16 first used in escape sequence) */
+
+/* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	[0] = "#282828", /* hard contrast: #1d2021 / soft: #32302f */
-	[1] = "#cc241d", /* red     */
-	[2] = "#98971a", /* green   */
-	[3] = "#d79921", /* yellow  */
-	[4] = "#458588", /* blue    */
-	[5] = "#b16286", /* magenta */
-	[6] = "#689d6a", /* cyan    */
-	[7] = "#a89984", /* white   */
+	/* 8 normal colors (ANSI 0-7) */
+	"#0d1117",  /* 0: black   - scale.gray.9 / canvas.default */
+	"#cf462d",  /* 1: red     - scale.coral.5 (closest to red) */
+	"#3fb950",  /* 2: green   - GitHub success green* */
+	"#d29922",  /* 3: yellow  - scale.yellow.3 / attention.fg */
+	"#58a6ff",  /* 4: blue    - scale.blue.3 / accent.fg */
+	"#a371f7",  /* 5: magenta - scale.purple.4 / done.fg */
+	"#79c0ff",  /* 6: cyan    - scale.blue.2 (light blue as cyan) */
+	"#c9d1d9",  /* 7: white   - scale.gray.1 / fg.default */
 
-	/* 8 bright colors */
-	[8]  = "#928374", /* black   */
-	[9]  = "#fb4934", /* red     */
-	[10] = "#b8bb26", /* green   */
-	[11] = "#fabd2f", /* yellow  */
-	[12] = "#83a598", /* blue    */
-	[13] = "#d3869b", /* magenta */
-	[14] = "#8ec07c", /* cyan    */
-	[15] = "#ebdbb2", /* white   */
+	/* 8 bright colors (ANSI 8-15) */
+	"#21262d",  /* 8:  bright black - scale.gray.7 */
+	"#f78166",  /* 9:  bright red   - scale.coral.3 */
+	"#5fb970",  /* 10: bright green - lighter GitHub green* */
+	"#e3b341",  /* 11: bright yellow - scale.yellow.2 */
+	"#79c0ff",  /* 12: bright blue  - scale.blue.2 */
+	"#bc8cff",  /* 13: bright magenta - scale.purple.3 */
+	"#a5d6ff",  /* 14: bright cyan  - scale.blue.1 */
+	"#f0f6fc",  /* 15: bright white - scale.gray.0 */
 
-	/* special colors */
 	[255] = 0,
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#add8e6", /* 256 */
-	"#555555", /* 257 */
-	"#ebdbb2", /* 258: foreground */
-	"#262626", /* 259: background */
-	
- };
 
+	/* extended colors (index 256+) */
+	"#c9d1d9",  /* 256: cursor color (defaultcs) */
+	"#0d1117",  /* 257: reverse cursor (defaultrcs) */
+	"#c9d1d9",  /* 258: default foreground (defaultfg) */
+	"#0d1117",  /* 259: default background (defaultbg) */
+};
 
-
+/* Default color indices */
 unsigned int defaultfg = 258;
 unsigned int defaultbg = 259;
-unsigned int defaultcs = 258;
-static unsigned int defaultrcs = 259;
+unsigned int defaultcs = 256;
+static unsigned int defaultrcs = 257;
 
 // * 2: Block ("█")
  // * 4: Underline ("_")
