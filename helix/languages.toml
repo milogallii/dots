@@ -5,10 +5,10 @@ command = "simple-completion-language-server"
 
 [language-server.scls.config]
 feature_words = true 
-feature_snippets = true              
-snippets_first = true                
+feature_snippets = true
+snippets_first = true
 snippets_inline_by_word_tail = false 
-feature_unicode_input = false        
+feature_unicode_input = false
 feature_paths = true
 feature_citations = true 
 
