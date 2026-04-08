@@ -90,47 +90,40 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* Terminal colors (16 first used in escape sequence) */
-
-
-/* Terminal colors (16 first used in escape sequence) */
-
-/* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors (ANSI 0-7) */
-	"#0d1117",  /* 0: black   - scale.gray.9 / canvas.default */
-	"#cf462d",  /* 1: red     - scale.coral.5 (closest to red) */
-	"#3fb950",  /* 2: green   - GitHub success green* */
-	"#d29922",  /* 3: yellow  - scale.yellow.3 / attention.fg */
-	"#58a6ff",  /* 4: blue    - scale.blue.3 / accent.fg */
-	"#a371f7",  /* 5: magenta - scale.purple.4 / done.fg */
-	"#79c0ff",  /* 6: cyan    - scale.blue.2 (light blue as cyan) */
-	"#c9d1d9",  /* 7: white   - scale.gray.1 / fg.default */
+    /* 8 normal colors */
+    "#26233a", /* 0: black   (overlay) */
+    "#eb6f92", /* 1: red     (love)    */
+    "#31748f", /* 2: green   (pine)    */
+    "#f6c177", /* 3: yellow  (gold)    */
+    "#9ccfd8", /* 4: blue    (foam)    */
+    "#c4a7e7", /* 5: magenta (iris)    */
+    "#ebbcba", /* 6: cyan    (rose)    */
+    "#e0def4", /* 7: white   (text)    */
 
-	/* 8 bright colors (ANSI 8-15) */
-	"#21262d",  /* 8:  bright black - scale.gray.7 */
-	"#f78166",  /* 9:  bright red   - scale.coral.3 */
-	"#5fb970",  /* 10: bright green - lighter GitHub green* */
-	"#e3b341",  /* 11: bright yellow - scale.yellow.2 */
-	"#79c0ff",  /* 12: bright blue  - scale.blue.2 */
-	"#bc8cff",  /* 13: bright magenta - scale.purple.3 */
-	"#a5d6ff",  /* 14: bright cyan  - scale.blue.1 */
-	"#f0f6fc",  /* 15: bright white - scale.gray.0 */
+    /* 8 bright colors */
+    "#6e6a86", /* 8: black   (muted)   */
+    "#eb6f92", /* 9: red     (love)    */
+    "#9ccfd8", /* 10: green  (foam)    */
+    "#f6c177", /* 11: yellow (gold)    */
+    "#c4a7e7", /* 12: blue   (iris)    */
+    "#ebbcba", /* 13: magenta(rose)    */
+    "#e0def4", /* 14: cyan   (text)    */
+    "#e0def4", /* 15: white  (text)    */
 
-	[255] = 0,
+    [255] = 0,
 
-	/* extended colors (index 256+) */
-	"#c9d1d9",  /* 256: cursor color (defaultcs) */
-	"#0d1117",  /* 257: reverse cursor (defaultrcs) */
-	"#c9d1d9",  /* 258: default foreground (defaultfg) */
-	"#0d1117",  /* 259: default background (defaultbg) */
+    /* special colors (indexed after 255) */
+    "#e0def4", /* 256: default foreground */
+    "#191724", /* 257: default background */
+    "#6e6a86", /* 258: default cursor     */
+    "#f6c177", /* 259: reverse cursor     */
 };
 
-/* Default color indices */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 256;
+unsigned int defaultbg = 257;
+unsigned int defaultcs = 258;
+unsigned int defaultrcs = 259;
 
 // * 2: Block ("█")
  // * 4: Underline ("_")
