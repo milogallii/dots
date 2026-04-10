@@ -13,31 +13,10 @@ function compile_typst
     typst compile $argv[1] out.pdf
 end
 
-function pss
-    if test (count $argv) -lt 1
-        echo "usage: pss DELIM [PATH...]"
-        return 1
-    end
-
-    set delim (string escape --style=regex $argv[1])
-
-    if test (count $argv) -gt 1
-        set paths $argv[2..-1]
-    else
-        set paths .
-    end
-
-    set pattern "(?s):$delim\K.*?(?=$delim:)"
-
-    # collect .pesto files in current directory
-    set pesto_files (string match -g "*.pesto" *)
-
-    rg --color=never -nH -UoP -g '!*.pesto' $pattern $paths $pesto_files
-end
-
-alias ls='eza --icons always'
+alias ls='eza'
+alias play='cliamp'
 alias cd='z'
-alias l='eza -hlai --icons always'
+alias l='eza -hlai'
 alias ll='eza -T --level 2'
 alias tyc='compile_typst'
 abbr -a r spf
