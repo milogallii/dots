@@ -1,5 +1,7 @@
 export SNIPPETS_PATH="$HOME/.config/helix/snippets.toml"
 export EDITOR="helix"
+export XDG_CURRENT_DESKTOP=gtk
+
 set -gx PATH $HOME/.cargo/bin $PATH
 set -U fish_greeting
 set -gx DOTNET_ROOT /usr/share/dotnet
