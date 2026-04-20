@@ -18,7 +18,7 @@ local opts = { noremap = true, silent = true }
 -- File
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save file" })
 map("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
-map("n", "<leader>f", "<cmd>Oi<cr>", { desc = "File explorer" })
+map("n", "<leader>f", "<cmd>Oil<cr>", { desc = "File explorer" })
 
 -- Buffers
 map("n", "<leader>m", "<cmd>bnext<cr>", { desc = "Next buffer" })
@@ -32,13 +32,37 @@ map("n", "<leader>sh", "<cmd>split<cr>", { desc = "Horizontal split" })
 -- Clear search highlight
 map("n", "<leader>h", "<cmd>nohlsearch<cr>", { desc = "Clear highlights" })
 
+-- Better window navigation
+map("n", "<C-h>", "<C-w>h", opts)
+map("n", "<C-j>", "<C-w>j", opts)
+map("n", "<C-k>", "<C-w>k", opts)
+map("n", "<C-l>", "<C-w>l", opts)
+
+-- Stay in visual mode when indenting
+map("v", "<", "<gv", opts)
+map("v", ">", ">gv", opts)
+
+-- Move lines up/down
+map("n", "<A-j>", "<cmd>m .+1<cr>==", opts)
+map("n", "<A-k>", "<cmd>m .-2<cr>==", opts)
+map("v", "<A-j>", ":m '>+1<cr>gv=gv", opts)
+map("v", "<A-k>", ":m '<-2<cr>gv=gv", opts)
 
 vim.pack.add {
 	'https://github.com/neovim/nvim-lspconfig',
 	'https://github.com/stevearc/oil.nvim',
-	'https://github.com/rose-pine/neovim.git',	
+	'https://github.com/rose-pine/neovim.git',
+    	'https://github.com/Saghen/blink.cmp',
+    'https://github.com/nvim-lualine/lualine.nvim',
 }
 
+require('lualine').setup({
+    options = { theme = 'rose-pine' }
+})
 require("oil").setup()
+require('blink.cmp').setup({
+    keymap = { preset = 'default' },
+    sources = { default = { 'lsp', 'path', 'buffer' } },
+})
 vim.cmd.colorscheme('rose-pine')
 
