@@ -1,5 +1,5 @@
 export SNIPPETS_PATH="$HOME/.config/helix/snippets.toml"
-export EDITOR="helix"
+export EDITOR="nvim"
 export XDG_CURRENT_DESKTOP=gtk
 
 set -gx PATH $HOME/.cargo/bin $PATH
@@ -24,7 +24,7 @@ alias tyc='compile_typst'
 abbr -a r spf
 abbr -a rmf 'rm -rf'
 abbr -a ta 'tmux a'
-abbr -a k helix
+abbr -a k 'nvim .'
 abbr -a gps 'git add . && git commit -m "autopush" && git push'
 abbr -a gp 'git pull --rebase'
 abbr -a vpn_add 'nmcli con import type wireguard file'

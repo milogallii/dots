@@ -1,5 +1,4 @@
 /home/mgalli/Scripts/tery.sh &
-
 rdb -merge ~/.Xresources
 
 export XDG_CURRENT_DESKTOP=gtk
@@ -7,14 +6,13 @@ export XDG_SESSION_TYPE=x11
 export XCURSOR_SIZE=24
 
 dunst &
-feh --bg-fill ~/Pictures/wall.jpg
 xset s off          
 xset s noblank      
 xset -dpms          
 xset dpms 0 0 0     
-xset r rate 200 50
+xset r rate 300 30 
 
-picom -b
+feh --bg-fill ~/Pictures/wall.jpg
 
 /usr/lib/xdg-desktop-portal-gtk &
 /usr/lib/xdg-desktop-portal &
