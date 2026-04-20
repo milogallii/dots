@@ -2,6 +2,14 @@ vim.o.number = true
 vim.o.relativenumber = true
 vim.o.scrolloff = 999
 vim.o.signcolumn = "yes:1"
+vim.o.expandtab = true      
+vim.o.shiftwidth = 4       
+vim.o.tabstop = 4          
+vim.o.smartindent = true   
+vim.o.termguicolors = true  
+vim.o.undofile = true       
+vim.o.cursorline = true     
+vim.o.timeoutlen = 300     
 
 vim.opt.fillchars = { eob = " " }
 vim.opt.ignorecase = true
@@ -52,17 +60,12 @@ vim.pack.add {
 	'https://github.com/neovim/nvim-lspconfig',
 	'https://github.com/stevearc/oil.nvim',
 	'https://github.com/rose-pine/neovim.git',
-    	'https://github.com/Saghen/blink.cmp',
-    'https://github.com/nvim-lualine/lualine.nvim',
+	'https://github.com/nvim-lualine/lualine.nvim',
 }
 
 require('lualine').setup({
     options = { theme = 'rose-pine' }
 })
 require("oil").setup()
-require('blink.cmp').setup({
-    keymap = { preset = 'default' },
-    sources = { default = { 'lsp', 'path', 'buffer' } },
-})
 vim.cmd.colorscheme('rose-pine')
 
