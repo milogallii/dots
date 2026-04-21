@@ -13,7 +13,7 @@ xset dpms 0 0 0
 xset r rate 300 30 
 
 feh --bg-fill ~/Pictures/wall.jpg
-
+picom -b
 /usr/lib/xdg-desktop-portal-gtk &
 /usr/lib/xdg-desktop-portal &
 
