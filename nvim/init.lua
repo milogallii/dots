@@ -25,6 +25,7 @@ local opts = { noremap = true, silent = true }
 -- File
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save file" })
 map("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
+map("n", "<leader>f", "<cmd>Oil<cr>", { desc = "Quit" })
 map("n", "<leader>t", "<cmd>lua MiniTrailspace.trim() MiniTrailspace.trim_last_lines()<cr>", { desc = "Trim whitespaces" })
 
 -- Buffers
@@ -62,7 +63,8 @@ vim.pack.add {
 	'https://github.com/neovim/nvim-lspconfig',
     'https://github.com/nvim-treesitter/nvim-treesitter',
 	'https://github.com/stevearc/oil.nvim',
-	'https://github.com/rose-pine/neovim.git',
+	-- 'https://github.com/rose-pine/neovim.git',
+    'https://github.com/ellisonleao/gruvbox.nvim.git'
 }
 
 require("oil").setup()
@@ -86,7 +88,10 @@ require('mini.comment').setup({
 
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('rust-analyzer')
-vim.cmd.colorscheme('rose-pine')
+vim.lsp.enable('clangd')
+vim.lsp.enable('tombi')
+
+vim.cmd.colorscheme('gruvbox')
 
 local builtin = require('telescope.builtin')
 map("n", "<leader>ff", builtin.find_files)

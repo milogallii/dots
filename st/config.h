@@ -81,40 +81,75 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+// rosepine theme
+// static const char *colorname[] = {
+//     /* 8 normal colors */
+//     "#26233a", /* 0: black   (overlay) */
+//     "#eb6f92", /* 1: red     (love)    */
+//     "#31748f", /* 2: green   (pine)    */
+//     "#f6c177", /* 3: yellow  (gold)    */
+//     "#9ccfd8", /* 4: blue    (foam)    */
+//     "#c4a7e7", /* 5: magenta (iris)    */
+//     "#ebbcba", /* 6: cyan    (rose)    */
+//     "#e0def4", /* 7: white   (text)    */
+//
+//     /* 8 bright colors */
+//     "#6e6a86", /* 8: black   (muted)   */
+//     "#eb6f92", /* 9: red     (love)    */
+//     "#9ccfd8", /* 10: green  (foam)    */
+//     "#f6c177", /* 11: yellow (gold)    */
+//     "#c4a7e7", /* 12: blue   (iris)    */
+//     "#ebbcba", /* 13: magenta(rose)    */
+//     "#e0def4", /* 14: cyan   (text)    */
+//     "#e0def4", /* 15: white  (text)    */
+//
+//     [255] = 0,
+//
+//     /* special colors (indexed after 255) */
+//     "#e0def4", /* 256: default foreground */
+//     "#191724", /* 257: default background */
+//     "#6e6a86", /* 258: default cursor     */
+//     "#f6c177", /* 259: reverse cursor     */
+// };
+//
+// unsigned int defaultfg = 256;
+// unsigned int defaultbg = 257;
+// unsigned int defaultcs = 258;
+// unsigned int defaultrcs = 259;
+
+// gruvbox theme
+
 static const char *colorname[] = {
     /* 8 normal colors */
-    "#26233a", /* 0: black   (overlay) */
-    "#eb6f92", /* 1: red     (love)    */
-    "#31748f", /* 2: green   (pine)    */
-    "#f6c177", /* 3: yellow  (gold)    */
-    "#9ccfd8", /* 4: blue    (foam)    */
-    "#c4a7e7", /* 5: magenta (iris)    */
-    "#ebbcba", /* 6: cyan    (rose)    */
-    "#e0def4", /* 7: white   (text)    */
+    [0] = "#282828", /* black   */
+    [1] = "#cc241d", /* red     */
+    [2] = "#98971a", /* green   */
+    [3] = "#d79921", /* yellow  */
+    [4] = "#458588", /* blue    */
+    [5] = "#b16286", /* magenta */
+    [6] = "#689d6a", /* cyan    */
+    [7] = "#a89984", /* white   */
 
     /* 8 bright colors */
-    "#6e6a86", /* 8: black   (muted)   */
-    "#eb6f92", /* 9: red     (love)    */
-    "#9ccfd8", /* 10: green  (foam)    */
-    "#f6c177", /* 11: yellow (gold)    */
-    "#c4a7e7", /* 12: blue   (iris)    */
-    "#ebbcba", /* 13: magenta(rose)    */
-    "#e0def4", /* 14: cyan   (text)    */
-    "#e0def4", /* 15: white  (text)    */
+    [8]  = "#928374", /* bright black (gray) */
+    [9]  = "#fb4934", /* bright red          */
+    [10] = "#b8bb26", /* bright green        */
+    [11] = "#fabd2f", /* bright yellow       */
+    [12] = "#83a598", /* bright blue         */
+    [13] = "#d3869b", /* bright magenta      */
+    [14] = "#8ec07c", /* bright cyan         */
+    [15] = "#ebdbb2", /* bright white        */
 
-    [255] = 0,
-
-    /* special colors (indexed after 255) */
-    "#e0def4", /* 256: default foreground */
-    "#191724", /* 257: default background */
-    "#6e6a86", /* 258: default cursor     */
-    "#f6c177", /* 259: reverse cursor     */
+    /* special colors */
+    [256] = "#282828", /* background */
+    [257] = "#ebdbb2", /* foreground */
+    [258] = "#d79921", /* cursor     */
 };
 
-unsigned int defaultfg = 256;
-unsigned int defaultbg = 257;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
 unsigned int defaultcs = 258;
-unsigned int defaultrcs = 259;
+static unsigned int defaultrcs = 258;
 
 // * 2: Block ("█")
  // * 4: Underline ("_")
