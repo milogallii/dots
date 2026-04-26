@@ -10,6 +10,7 @@ vim.o.termguicolors = true
 vim.o.undofile = true
 vim.o.cursorline = true
 vim.o.timeoutlen = 150
+vim.o.autocomplete = true
 vim.opt.fillchars = { eob = " " }
 vim.opt.ignorecase = true
 vim.opt.wrap = false
@@ -26,7 +27,8 @@ local opts = { noremap = true, silent = true }
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save file" })
 map("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
 map("n", "<leader>f", "<cmd>Oil<cr>", { desc = "Quit" })
-map("n", "<leader>t", "<cmd>lua MiniTrailspace.trim() MiniTrailspace.trim_last_lines()<cr>", { desc = "Trim whitespaces" })
+map("n", "<leader>t", "<cmd>lua MiniTrailspace.trim() MiniTrailspace.trim_last_lines()<cr>",
+    { desc = "Trim whitespaces" })
 
 -- Buffers
 map("n", "<leader>m", "<cmd>bnext<cr>", { desc = "Next buffer" })
@@ -60,12 +62,26 @@ vim.pack.add {
     'https://github.com/nvim-lua/plenary.nvim',
     'https://github.com/nvim-telescope/telescope.nvim',
     'https://github.com/nvim-mini/mini.nvim',
-	'https://github.com/neovim/nvim-lspconfig',
+    'https://github.com/neovim/nvim-lspconfig',
     'https://github.com/nvim-treesitter/nvim-treesitter',
-	'https://github.com/stevearc/oil.nvim',
-	-- 'https://github.com/rose-pine/neovim.git',
-    'https://github.com/ellisonleao/gruvbox.nvim.git'
+    'https://github.com/stevearc/oil.nvim',
+    -- 'https://github.com/rose-pine/neovim.git',
+    'https://github.com/ellisonleao/gruvbox.nvim.git',
+    "https://github.com/stevearc/conform.nvim",
 }
+
+require("conform").setup({
+    format_on_save = {
+        timeout_ms = 500,
+        lsp_fallback = true,
+    },
+    formatters_by_ft = {
+        lua = { "stylua" },
+        json = { "jq" },
+        rust = { "rustfmt" },
+        html = { "djlint" },
+    },
+})
 
 require("oil").setup()
 require('mini.basics').setup()
@@ -90,10 +106,9 @@ vim.lsp.enable('lua_ls')
 vim.lsp.enable('rust-analyzer')
 vim.lsp.enable('clangd')
 vim.lsp.enable('tombi')
-
+vim.lsp.enable('superhtml')
 vim.cmd.colorscheme('gruvbox')
 
 local builtin = require('telescope.builtin')
 map("n", "<leader>ff", builtin.find_files)
 map('n', '<leadr>fg', builtin.live_grep)
-
