@@ -187,7 +187,7 @@ oxwm.bar.set_scheme_normal(colors.fg, colors.bg, "#444444")
 -- Occupied tags
 oxwm.bar.set_scheme_occupied(colors.cyan, colors.bg, colors.cyan)
 -- Currently selected tag
-oxwm.bar.set_scheme_selected(colors.cyan, colors.bg, colors.purple)
+oxwm.bar.set_scheme_selected(colors.orange, colors.bg, colors.orange)
 -- Urgent tags (windows requesting attention)
 oxwm.bar.set_scheme_urgent(colors.red, colors.bg, colors.red)
 
