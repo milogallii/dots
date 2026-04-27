@@ -1,5 +1,5 @@
 static const unsigned int borderpx = 2; /* border pixel of windows */
-static const unsigned int snap = 10;     /* snap pixel */
+static const unsigned int snap = 10;    /* snap pixel */
 static const unsigned int gappx = 10;   /* gaps between windows */
 static const int showbar = 1;           /* 0 means no bar */
 static const int topbar = 1;            /* 0 means bottom bar */
@@ -63,7 +63,7 @@ static char dmenumon[2] =
 static const char *dmenucmd[] = {"/home/mgalli/Scripts/menu.sh", NULL};
 static const char *termcmd[] = {"st", NULL};
 static const char *wallpaper_toggle[] = {
-    "feh", "--bg-fill", "/home/mgalli/Pictures/wall.jpg", NULL};
+    "xwallpaper", "--zoom", "/home/mgalli/Pictures/wall.jpg", NULL};
 static const char *battify[] = {"/home/mgalli/Scripts/battify.sh", NULL};
 static const char *dattify[] = {"/home/mgalli/Scripts/dattify.sh", NULL};
 static const char *screenshot[] = {"flameshot", "gui", NULL};

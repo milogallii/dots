@@ -224,7 +224,6 @@ oxwm.key.bind({ modkey, "Shift" }, "Space", oxwm.client.toggle_floating())
 -- Layout management
 oxwm.key.bind({ modkey }, "F", oxwm.layout.set("normie"))
 oxwm.key.bind({ modkey }, "C", oxwm.layout.set("tiling"))
--- Cycle through layouts
 oxwm.key.bind({ modkey }, "N", oxwm.layout.cycle())
 
 -- Master area controls (tiling layout)
@@ -328,7 +327,6 @@ oxwm.key.bind({ modkey, "Control", "Shift" }, "9", oxwm.tag.toggletag(8))
 -- Commands to run once when OXWM starts
 -- Uncomment and modify these examples, or add your own
 
-oxwm.autostart("picom")
 oxwm.autostart("xwallpaper --zoom ~/Pictures/wall.jpg")
 oxwm.autostart("dunst")
 oxwm.autostart("nm-applet")
