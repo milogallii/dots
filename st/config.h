@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-static char *font = "Monaspace Krypton NF:regular:pixelsize=24";
+static char *font = "Monaspace Neon NF:regular:pixelsize=26";
 static int borderpx = 10;
 
 static char *shell = "/bin/sh";

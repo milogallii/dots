@@ -9,7 +9,7 @@ vim.o.smartindent = true
 vim.o.termguicolors = true
 vim.o.undofile = true
 vim.o.cursorline = true
-vim.o.timeoutlen = 150
+vim.o.timeoutlen = 250
 vim.o.autocomplete = true
 vim.opt.fillchars = { eob = " " }
 vim.opt.ignorecase = true
@@ -17,7 +17,6 @@ vim.opt.wrap = false
 vim.opt.linebreak = true
 vim.opt.breakindent = true
 vim.opt.clipboard = "unnamedplus"
-
 vim.g.mapleader = ' '
 
 local map = vim.keymap.set
