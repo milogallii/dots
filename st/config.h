@@ -1,7 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 static char *font =
-    "Iosevka Nerd Font Mono:style=Regular:pixelsize=26:antialias=true:autohint=true";
+    "Iosevka Nerd Font "
+    "Mono:style=Regular:pixelsize=26:antialias=true:autohint=true";
 static int borderpx = 10;
 
 static char *shell = "/bin/sh";
@@ -131,8 +132,8 @@ static const char *colorname[] = {
     [7] = "#a89984", /* white   */
 
     /* 8 bright colors */
-    [8]  = "#928374", /* bright black (gray) */
-    [9]  = "#fb4934", /* bright red          */
+    [8] = "#928374",  /* bright black (gray) */
+    [9] = "#fb4934",  /* bright red          */
     [10] = "#b8bb26", /* bright green        */
     [11] = "#fabd2f", /* bright yellow       */
     [12] = "#83a598", /* bright blue         */
@@ -152,10 +153,10 @@ unsigned int defaultcs = 258;
 static unsigned int defaultrcs = 258;
 
 // * 2: Block ("█")
- // * 4: Underline ("_")
- // * 6: Bar ("|")
- // * 7: Snowman ("☃")
- // */
+// * 4: Underline ("_")
+// * 6: Bar ("|")
+// * 7: Snowman ("☃")
+// */
 static unsigned int cursorshape = 6;
 
 /*

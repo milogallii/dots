@@ -26,7 +26,8 @@ local opts = { noremap = true, silent = true }
 -- File
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save file" })
 map("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
-map("n", "<leader>f", "<cmd>Oil<cr>", { desc = "Quit" })
+map("n", "<leader>f", "<cmd>Pick files<cr>", { desc = "Quit" })
+map('n', '<leader>h', '<cmd>nohlsearch<cr>', { desc = 'Clear search highlights' })
 map("n", "<leader>t", "<cmd>lua MiniTrailspace.trim() MiniTrailspace.trim_last_lines()<cr>",
     { desc = "Trim whitespaces" })
 
@@ -38,9 +39,6 @@ map("n", "<leader>x", "<cmd>bdelete<cr>", { desc = "Delete buffer" })
 -- Windows
 map("n", "<leader>sv", "<cmd>vsplit<cr>", { desc = "Vertical split" })
 map("n", "<leader>sh", "<cmd>split<cr>", { desc = "Horizontal split" })
-
--- Clear search highlight
-map("n", "<leader>h", "<cad>nohlsearch<cr>", { desc = "Clear highlights" })
 
 -- Better window navigation
 map("n", "<C-h>", "<C-w>h", opts)
@@ -60,13 +58,13 @@ map("v", "<A-k>", ":m '<-2<cr>gv=gv", opts)
 
 vim.pack.add {
     'https://github.com/nvim-lua/plenary.nvim',
-    'https://github.com/nvim-telescope/telescope.nvim',
     'https://github.com/nvim-mini/mini.nvim',
     'https://github.com/neovim/nvim-lspconfig',
     'https://github.com/nvim-treesitter/nvim-treesitter',
     'https://github.com/stevearc/oil.nvim',
     -- 'https://github.com/rose-pine/neovim.git',
     'https://github.com/ellisonleao/gruvbox.nvim.git',
+    -- "https://github.com/EdenEast/nightfox.nvim.git",
     "https://github.com/stevearc/conform.nvim",
 }
 
@@ -95,6 +93,7 @@ require('mini.git').setup()
 require('mini.diff').setup()
 require('mini.trailspace').setup()
 require('mini.statusline').setup()
+require('mini.pick').setup()
 require('mini.comment').setup({
     mappings = {
         comment_line = '<Space>c',
@@ -108,7 +107,3 @@ vim.lsp.enable('clangd')
 vim.lsp.enable('tombi')
 vim.lsp.enable('superhtml')
 vim.cmd.colorscheme('gruvbox')
-
-local builtin = require('telescope.builtin')
-map("n", "<leader>ff", builtin.find_files)
-map('n', '<leadr>fg', builtin.live_grep)
