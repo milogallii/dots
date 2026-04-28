@@ -26,15 +26,15 @@ local opts = { noremap = true, silent = true }
 -- File
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save file" })
 map("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
-map("n", "<leader>f", "<cmd>Pick files<cr>", { desc = "Quit" })
+
+map("n", "<leader>f", "<cmd>Pick files<cr>", { desc = "file picker" })
+map("n", "<leader>b", "<cmd>Pick buffers<cr>", { desc = "buffer picker" })
+map("n", "<leader>g", "<cmd>Pick grep live<cr>", { desc = "grep live" })
+map("n", "<leader>x", "<cmd>:lua MiniFiles.open()<cr>", { desc = "file editor" })
+
 map('n', '<leader>h', '<cmd>nohlsearch<cr>', { desc = 'Clear search highlights' })
 map("n", "<leader>t", "<cmd>lua MiniTrailspace.trim() MiniTrailspace.trim_last_lines()<cr>",
     { desc = "Trim whitespaces" })
-
--- Buffers
-map("n", "<leader>m", "<cmd>bnext<cr>", { desc = "Next buffer" })
-map("n", "<leader>n", "<cmd>bprev<cr>", { desc = "Prev buffer" })
-map("n", "<leader>x", "<cmd>bdelete<cr>", { desc = "Delete buffer" })
 
 -- Windows
 map("n", "<leader>sv", "<cmd>vsplit<cr>", { desc = "Vertical split" })
@@ -94,6 +94,7 @@ require('mini.diff').setup()
 require('mini.trailspace').setup()
 require('mini.statusline').setup()
 require('mini.pick').setup()
+require('mini.files').setup()
 require('mini.comment').setup({
     mappings = {
         comment_line = '<Space>c',
