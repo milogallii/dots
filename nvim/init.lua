@@ -29,7 +29,8 @@ map("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
 map("n", "<leader>f", "<cmd>Pick files<cr>", { desc = "file picker" })
 map("n", "<leader>b", "<cmd>Pick buffers<cr>", { desc = "buffer picker" })
 map("n", "<leader>g", "<cmd>Pick grep live<cr>", { desc = "grep live" })
-map("n", "<leader>x", "<cmd>:lua MiniFiles.open()<cr>", { desc = "file editor" })
+map("n", "<leader>x", "<cmd>:lua MiniFiles.open()<cr>", { desc = "open file editor" })
+map("n", "<leader>z", "<cmd>:lua MiniFiles.close()<cr>", { desc = "close file editor" })
 
 map('n', '<leader>h', '<cmd>nohlsearch<cr>', { desc = 'Clear search highlights' })
 map("n", "<leader>t", "<cmd>lua MiniTrailspace.trim() MiniTrailspace.trim_last_lines()<cr>",
