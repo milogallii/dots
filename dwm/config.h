@@ -5,13 +5,13 @@ static const int showbar = 1;           /* 0 means no bar */
 static const int topbar = 1;            /* 0 means bottom bar */
 static const int user_bh = 0; /* 0 means that dwm will calculate bar height, >=
                                  1 means dwm will user_bh as bar height */
-static const char *fonts[] = {"Monaspace Neon NF:size=16"};
-static const char dmenufont[] = "Monaspace Neon NF:size=16";
+static const char *fonts[] = {"Iosevka Nerd Font:size=12"};
+static const char dmenufont[] = "Iosevka Nerd Font:size=12";
 static const char col_gray1[] = "#282828";
 static const char col_gray2[] = "#444444";
 static const char col_gray3[] = "#bbbbbb";
 static const char col_gray4[] = "#eeeeee";
-static const char col_cyan[] = "#458588";
+static const char col_cyan[] = "#79a383";
 static const char *colors[][3] = {
     /*               fg         bg         border   */
     [SchemeNorm] = {col_gray3, col_gray1, col_gray2},

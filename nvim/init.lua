@@ -77,7 +77,8 @@ require("conform").setup({
         lua = { "stylua" },
         json = { "jq" },
         rust = { "rustfmt" },
-        html = { "djlint" },
+        html = { "superhtml" },
+        htmldjango = { "superhtml" }
     },
 })
 

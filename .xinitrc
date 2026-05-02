@@ -1,9 +1,10 @@
 /home/mgalli/Scripts/tery.sh &
-rdb -merge ~/.Xresources
+xrdb -merge ~/.Xresources
 
 export XDG_CURRENT_DESKTOP=gtk
 export XDG_SESSION_TYPE=x11
 export XCURSOR_SIZE=24
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 dunst &
 xset s off
@@ -13,7 +14,7 @@ xset dpms 0 0 0
 xset r rate 300 30
 
 xwallpaper --zoom ~/Pictures/wall.jpg
-# picom -b
+picom -b
 /usr/lib/xdg-desktop-portal-gtk &
 /usr/lib/xdg-desktop-portal &
 
