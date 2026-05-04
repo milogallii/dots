@@ -1,6 +1,8 @@
 /home/mgalli/Scripts/tery.sh &
 xrdb -merge ~/.Xresources
 
+export QT_SCALE_FACTOR=2
+export GDK_SCALE=2
 export XDG_CURRENT_DESKTOP=gtk
 export XDG_SESSION_TYPE=x11
 export XCURSOR_SIZE=24
