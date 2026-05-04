@@ -18,8 +18,8 @@ end
 alias ls='eza'
 alias play='cliamp'
 alias cd='z'
-alias l='eza -hlai'
-alias ll='eza -T --level 2'
+alias ll='eza -hlai'
+alias l='eza -T --level 1 -a'
 alias tyc='compile_typst'
 alias k='nvim'
 abbr -a r spf
