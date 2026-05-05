@@ -1,2 +1,2 @@
 #!/bin/bash
-dmenu_run -b -i -fn "Iosevka Nerd Font:regular:pixelsize=24" -nb "#282828" -sb "#79a383" -nf "#dddddd" -sf "#191724"
+dmenu_run -b -i -fn "Iosevka Nerd Font:bold:pixelsize=24" -nb "#0d1117" -sb "#58a6ff" -nf "#dddddd" -sf "#0d1117"

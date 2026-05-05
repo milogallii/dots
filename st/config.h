@@ -118,31 +118,58 @@ unsigned int tabspaces = 8;
 
 // gruvbox theme
 
+// static const char *colorname[] = {
+//     /* 8 normal colors */
+//     [0] = "#282828", /* black   */
+//     [1] = "#cc241d", /* red     */
+//     [2] = "#98971a", /* green   */
+//     [3] = "#d79921", /* yellow  */
+//     [4] = "#458588", /* blue    */
+//     [5] = "#b16286", /* magenta */
+//     [6] = "#689d6a", /* cyan    */
+//     [7] = "#a89984", /* white   */
+//
+//     /* 8 bright colors */
+//     [8] = "#928374",  /* bright black (gray) */
+//     [9] = "#fb4934",  /* bright red          */
+//     [10] = "#b8bb26", /* bright green        */
+//     [11] = "#fabd2f", /* bright yellow       */
+//     [12] = "#83a598", /* bright blue         */
+//     [13] = "#d3869b", /* bright magenta      */
+//     [14] = "#8ec07c", /* bright cyan         */
+//     [15] = "#ebdbb2", /* bright white        */
+//
+//     /* special colors */
+//     [256] = "#282828", /* background */
+//     [257] = "#ebdbb2", /* foreground */
+//     [258] = "#d79921", /* cursor     */
+// };
+
 static const char *colorname[] = {
     /* 8 normal colors */
-    [0] = "#282828", /* black   */
-    [1] = "#cc241d", /* red     */
-    [2] = "#98971a", /* green   */
-    [3] = "#d79921", /* yellow  */
-    [4] = "#458588", /* blue    */
-    [5] = "#b16286", /* magenta */
-    [6] = "#689d6a", /* cyan    */
-    [7] = "#a89984", /* white   */
+    [0] = "#0d1117", /* black   (bg) */
+    [1] = "#f85149", /* red     */
+    [2] = "#3fb950", /* green   */
+    [3] = "#d29922", /* yellow  */
+    [4] = "#58a6ff", /* blue    */
+    [5] = "#bc8cff", /* magenta */
+    [6] = "#39c5cf", /* cyan    */
+    [7] = "#b1bac4", /* white   (fg dim) */
 
     /* 8 bright colors */
-    [8] = "#928374",  /* bright black (gray) */
-    [9] = "#fb4934",  /* bright red          */
-    [10] = "#b8bb26", /* bright green        */
-    [11] = "#fabd2f", /* bright yellow       */
-    [12] = "#83a598", /* bright blue         */
-    [13] = "#d3869b", /* bright magenta      */
-    [14] = "#8ec07c", /* bright cyan         */
-    [15] = "#ebdbb2", /* bright white        */
+    [8] = "#484f58",  /* bright black (comment) */
+    [9] = "#ff7b72",  /* bright red   */
+    [10] = "#56d364", /* bright green */
+    [11] = "#e3b341", /* bright yellow*/
+    [12] = "#79c0ff", /* bright blue  */
+    [13] = "#d2a8ff", /* bright magenta */
+    [14] = "#56d4dd", /* bright cyan  */
+    [15] = "#f0f6fc", /* bright white (main fg) */
 
-    /* special colors */
-    [256] = "#282828", /* background */
-    [257] = "#ebdbb2", /* foreground */
-    [258] = "#d79921", /* cursor     */
+    /* special */
+    [256] = "#0d1117", /* background */
+    [257] = "#f0f6fc", /* foreground */
+    [258] = "#79c0ff", /* cursor */
 };
 
 unsigned int defaultfg = 257;

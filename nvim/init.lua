@@ -63,9 +63,12 @@ vim.pack.add {
     'https://github.com/nvim-treesitter/nvim-treesitter',
     'https://github.com/stevearc/oil.nvim',
     -- 'https://github.com/rose-pine/neovim.git',
-    'https://github.com/ellisonleao/gruvbox.nvim.git',
+    -- 'https://github.com/ellisonleao/gruvbox.nvim.git',
     -- "https://github.com/EdenEast/nightfox.nvim.git",
-    "https://github.com/stevearc/conform.nvim",
+    -- 'https://github.com/jpwol/thorn.nvim.git',
+    'https://github.com/projekt0n/github-nvim-theme.git',
+    'https://github.com/stevearc/conform.nvim',
+
 }
 
 require("conform").setup({
@@ -108,4 +111,4 @@ vim.lsp.enable('rust-analyzer')
 vim.lsp.enable('clangd')
 vim.lsp.enable('tombi')
 vim.lsp.enable('superhtml')
-vim.cmd.colorscheme('gruvbox')
+vim.cmd.colorscheme('github_dark_high_contrast')
